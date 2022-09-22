@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "my-chat-25e1b"
+  },
+  "targets": {
+    "my-chat-25e1b": {
+      "hosting": {
+        "my-chat": [
+          "my-chat-25e1b"
+        ]
+      }
+    }
   }
 }

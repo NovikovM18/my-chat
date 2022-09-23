@@ -1,0 +1,9 @@
+<p>chat works!</p>
+<div *ngFor="let msg of msgs; let i = index">
+    <p>
+        {{msg.text}}
+    </p>
+</div>
+<h1>{{text}}</h1>
+<input type="text" [(ngModel)]="text">
+<button (click)="send()">Send</button>

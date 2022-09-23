@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 
@@ -36,8 +35,6 @@ export class AuthService {
         console.log('error code', error.code);
         console.log('error', error);
           return { isValid: false, message: error.message };
-        // if (error.code) {
-        // }
       });
   }
 
@@ -52,9 +49,6 @@ export class AuthService {
       .catch(error => {
         console.log('Auth Service: signup error', error);
         return { isValid: false, message: error.message };
-        // if (error.code) {
-        // }
       });
   }
-
 }
